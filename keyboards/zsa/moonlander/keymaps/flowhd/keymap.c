@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[] [MATRIX_ROWS] [MATRIX_COLS] = {
                                                                                     KC_SPC,             KC_ENTER,          KC_HOME,             KC_END,              LT(1, KC_TAB),      KC_SPC
   ),
 // The left keypad is not used on Layer 1 to protect against strange behavior in using a multi-use key with the ' key.
-  [1] = LAYOUT_moonlander(:
+  [1] = LAYOUT_moonlander(
     KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,             KC_NO,               KC_NO,               KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_TRNS,
     KC_TAB,             KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,             KC_NO,               KC_NO,               LSFT(KC_7),         LSFT(KC_3),         LSFT(KC_1),         LSFT(KC_8),         ELPS,               LSFT(KC_6),
     KC_ESC,             KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,             KC_NO,               KC_NO,               LSFT(KC_2),         LSFT(KC_MINUS),     MDASH,              NDASH,              KC_LBRC,            KC_RBRC,
@@ -140,13 +140,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
       case FRMWR:
       if (record->event.pressed) {
-          SEND_STRING ("qmk compile -kb moonlander -km FlowHD");
+          SEND_STRING ("qmk compile -kb moonlander -km flowhd");
       }
 
       break;
       case FLSH:
       if (record->event.pressed) {
-          SEND_STRING ("qmk flash -kb moonlander -km FlowHD");
+          SEND_STRING ("qmk flash -kb moonlander -km flowhd");
       }
 
       break;
