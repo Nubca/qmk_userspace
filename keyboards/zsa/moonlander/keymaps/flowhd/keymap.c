@@ -8,7 +8,6 @@ enum custom_keycodes {
     NDASH,
     DVIDE,
     DGREE,
-    FRMWR,
     FLSH,
     R_QUE,
     R_EXC,
@@ -49,7 +48,7 @@ const uint16_t PROGMEM keymaps[] [MATRIX_ROWS] [MATRIX_COLS] = {
   ),
 
   [2] = LAYOUT_moonlander(
-    FLSH,               KC_F9,              KC_F5,              KC_F1,              KC_F3,              KC_F7,             KC_F11,              KC_F12,              KC_F6,              KC_F2,              KC_F10,             KC_F4,              KC_F8,              FRMWR,
+    FLSH,               KC_F9,              KC_F5,              KC_F1,              KC_F3,              KC_F7,             KC_F11,              KC_F12,              KC_F6,              KC_F2,              KC_F10,             KC_F4,              KC_F8,              KC_NO,
     KC_TAB,             PT_UP,              PRAYER,             STOP,               R_QUE,              R_EXC,             DGREE,               DVIDE,               KC_EQUAL,           KC_7,               KC_8,               KC_9,               KC_COMMA,           KC_BSLS,
     KC_ESC,             UNDO,               SLCTALL,            CUT,                COPY,               PASTE,             KC_LBRC,             KC_RBRC,             KC_MINUS,           KC_4,               KC_5,               KC_6,               KC_SCLN,            KC_DOT,
     SC_LSPO,            PT_DWN,             R_XXX,              PT_RHT,             PT_LFT,             CHILDX,                                                      KC_0,               KC_1,               KC_2,               KC_3,               KC_SLASH,           KC_TRNS,
@@ -138,7 +137,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LT(1, KC_ESC):
-            return 120;
+            return 150;
         default:
             return TAPPING_TERM;
     }
@@ -147,12 +146,6 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   switch (keycode) {
-      case FRMWR:
-      if (record->event.pressed) {
-          SEND_STRING ("qmk compile -kb moonlander -km flowhd");
-      }
-
-      break;
       case FLSH:
       if (record->event.pressed) {
           SEND_STRING ("qmk flash -kb moonlander -km flowhd");
