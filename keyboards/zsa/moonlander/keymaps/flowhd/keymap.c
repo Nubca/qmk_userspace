@@ -310,7 +310,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return true;
 
       break;
-   case STOP: // Praying hands
+   case STOP: // Stop sign
       if (record->event.pressed) {
           SEND_STRING (SS_LCTL(SS_LSFT("u")));
           SEND_STRING ("1f6d1");

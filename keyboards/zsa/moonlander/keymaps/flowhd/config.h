@@ -20,5 +20,5 @@
 #define COMBO_ONLY_FROM_LAYER 0
 #define COMBO_VARIABLE_LEN
 #define PERMISSIVE_HOLD // Nested Taps are allowed under the Tapping Term
-//define HOLD_ON_OTHER_KEY_PRESS // Rolling Taps are allowed under the Tapping Term
+#define HOLD_ON_OTHER_KEY_PRESS // Rolling Taps are allowed under the Tapping Term
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY // Rolling Taps are allowed under the Tapping Term per Key
