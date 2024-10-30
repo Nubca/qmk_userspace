@@ -11,9 +11,9 @@
 #define RGB_MATRIX_STARTUP_SPD 60
 
 // Per Key setting are available on most of the below settings
-#define TAPPING_TERM 200
+#define TAPPING_TERM 220
 #define TAPPING_TERM_PER_KEY
-#define QUICK_TAP_TERM 200 // Allow auto-repeat on Dual Function Keys by Double Tapping
+#define QUICK_TAP_TERM 150 // Allow auto-repeat on Dual Function Keys by Double Tapping
 #define COMBO_TERM 50     // How quickly all combo keys must be pressed in succession to trigger
 #define COMBO_HOLD_TERM 100  // How long at least one of the combo keys must be held to trigger
 #define COMBO_MUST_HOLD_MODS
@@ -21,4 +21,4 @@
 #define COMBO_VARIABLE_LEN
 #define PERMISSIVE_HOLD // Nested Taps are allowed under the Tapping Term
 #define HOLD_ON_OTHER_KEY_PRESS // Rolling Taps are allowed under the Tapping Term
-#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY // Rolling Taps are allowed under the Tapping Term per Key
+// #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY // Rolling Taps are allowed under the Tapping Term per Key
