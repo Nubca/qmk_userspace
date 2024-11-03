@@ -30,7 +30,7 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[] [MATRIX_ROWS] [MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
-    KC_1,               KC_2,               KC_3,               KC_4,               KC_5,               KC_6               TO(2)                TO(2),               KC_7,               KC_8,               KC_9,               KC_0,               KC_MINUS,           KC_EQUAL,
+    KC_1,               KC_2,               KC_3,               KC_4,               KC_5,               KC_6,               TO(2),              TO(2),               KC_7,               KC_8,               KC_9,               KC_0,               KC_MINUS,           KC_EQUAL,
     LT(2, KC_TAB),      KC_Q,               KC_W,               KC_E,               KC_R,               KC_T,              LGUI(KC_P),          LGUI(KC_W),          KC_Y,               KC_U,               KC_I,               KC_O,               KC_P,               LT(2, KC_BSLS),
     LT(1, KC_ESC),      KC_A,               KC_S,               KC_D,               KC_F,               KC_G,              KC_NO,               KC_NO,               KC_H,               KC_J,               KC_K,               KC_L,               KC_SCLN,            KC_QUOTE,
     KC_LSFT,            KC_Z,               KC_X,               KC_C,               KC_V,               KC_B,                                                        KC_N,               KC_M,               KC_COMMA,           KC_DOT,             KC_SLASH,           KC_RSFT,
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[] [MATRIX_ROWS] [MATRIX_COLS] = {
   ),
 
   [1] = LAYOUT_moonlander(
-    R_EXC,              KC_NO,              PT_LFT,             KC_RHT,             KC_NO,              KC_NO,             KC_NO,               KC_NO,               KC_NO,              KC_NO,              PT_DWN,             PT_UP,              R_QUE,              FLSH,
+    R_EXC,              KC_NO,              PT_LFT,             PT_RHT,             KC_NO,              KC_NO,             KC_NO,               KC_NO,               KC_NO,              KC_NO,              PT_DWN,             PT_UP,              R_QUE,              FLSH,
     KC_TAB,             KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,             KC_NO,               KC_NO,               DGREE,              LSFT(KC_7),         LSFT(KC_8),         KC_NO,              KC_LPRN,            KC_RPRN,
     KC_ESC,             SLCTALL,            UNDO,               CUT,                COPY,               PASTE,             KC_NO,               KC_NO,               DVIDE,              LSFT(KC_4),         LSFT(KC_5),         LSFT(KC_6),         KC_LBRC,            KC_RBRC,
     KC_LSFT,            STOP,               R_XXX,              CHILDX,             PRAYER,             KC_NO,                                                       KC_NO,              LSFT(KC_1),         LSFT(KC_2),         LSFT(KC_3),         LSFT(KC_LBRC),      LSFT(KC_RBRC),
