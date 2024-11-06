@@ -49,9 +49,9 @@ const uint16_t PROGMEM keymaps[] [MATRIX_ROWS] [MATRIX_COLS] = {
 
   [2] = LAYOUT_moonlander(
     KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,             KC_NO,               KC_NO,               KC_NO,              KC_MINUS,           KC_0,               KC_EQL,             KC_NO,              KC_NO,
-    KC_TAB,             CHILDX,             PRAYER,             R_QUE,              LSFT(KC_GRV),       R_EXC,             KC_NO,               KC_NO,               KC_UNDS,            KC_7,               KC_8,               KC_9,               KC_COLN,            KC_BSLS,
-    KC_ESC,             STOP,               PT_DWN,             PT_UP,              KC_GRV,             ELPS,              KC_NO,               KC_NO,               KC_PLUS,            KC_4,               KC_5,               KC_6,               KC_SCLN,            KC_COMMA,
-    KC_LSFT,            R_XXX,              PT_LFT,             PT_RHT,             MDASH,              NDASH,                                                       KC_NO,              KC_1,               KC_2,               KC_3,               KC_SLASH,           KC_DOT,
+    KC_TAB,             CHILDX,             PRAYER,             R_QUE,              KC_GRV,             R_EXC,             KC_NO,               KC_NO,               KC_UNDS,            KC_7,               KC_8,               KC_9,               KC_COLN,            KC_BSLS,
+    KC_ESC,             STOP,               PT_DWN,             PT_UP,              KC_NO,              ELPS,              KC_NO,               KC_NO,               KC_PLUS,            KC_4,               KC_5,               KC_6,               KC_SCLN,            KC_COMMA,
+    KC_LSFT,            R_XXX,              PT_LFT,             PT_RHT,             MDASH,              NDASH,                                                       LSFT(KC_GRV),       KC_1,               KC_2,               KC_3,               KC_SLASH,           KC_DOT,
     HYPR(KC_NO),        LCTL_T(KC_NO),      LALT_T(KC_LEFT),    LGUI_T(KC_RIGHT),   LCTL(KC_BSPC),                         TO(0),               TO(0),                                   KC_BSPC,            RCTL_T(KC_DOWN),    RALT_T(KC_UP),      RGUI_T(KC_NO),      MEH(KC_NO),
                                                                                     KC_SPC,             KC_ENTER,          KC_PGUP,             KC_PGDN,             KC_TAB,             KC_SPC
   ),
