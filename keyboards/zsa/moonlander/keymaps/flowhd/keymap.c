@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[] [MATRIX_ROWS] [MATRIX_COLS] = {
     KC_TAB,             KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,             KC_NO,               KC_NO,               DVIDE,              LSFT(KC_7),         LSFT(KC_8),         KC_LPRN,            KC_RPRN,            KC_PIPE,
     KC_ESC,             SLCTALL,            UNDO,               CUT,                COPY,               PASTE,             KC_NO,               KC_NO,               KC_EQL,             LSFT(KC_4),         LSFT(KC_5),         LSFT(KC_6),         KC_LBRC,            KC_RBRC,
     KC_LSFT,            KC_NO,              KC_NO,              KC_NO,              KC_NO,              KC_NO,                                                       KC_GRV,             LSFT(KC_1),         LSFT(KC_2),         LSFT(KC_3),         LSFT(KC_LBRC),      LSFT(KC_RBRC),
-    HYPR(KC_NO),        LCTL_T(KC_NO),      LALT_T(KC_LEFT),    LGUI_T(KC_RIGHT),   LCTL(KC_BSPC),                         TO(0),               TO(0),                                   KC_BSPC,            RCTL_T(KC_DOWN),    RALT_T(KC_UP),      RGUI_T(KC_NO),      MEH(KC_NO),
+    HYPR(KC_NO),        LCTL_T(KC_NO),      LALT_T(KC_LEFT),    LGUI_T(KC_RIGHT),   LCTL(KC_DEL),                          TO(0),               TO(0),                                   KC_DEL,            RCTL_T(KC_DOWN),    RALT_T(KC_UP),      RGUI_T(KC_NO),      MEH(KC_NO),
                                                                                     KC_SPC,             KC_ENTER,          KC_PGUP,             KC_PGDN,             KC_TAB,             KC_SPC
   ),
 
